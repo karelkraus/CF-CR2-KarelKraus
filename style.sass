@@ -1,0 +1,275 @@
+*
+	margin: 0
+	padding: 0
+	font-size: 1em
+	text-align: center
+
+body
+	font-family: 'Roboto', sans-serif
+
+header
+	display: flex
+	justify-content: space-around
+	align-items: center
+	background-color: #5B191A
+	height: 18vh
+
+#topBanner
+	width: 50%
+
+.topBanner
+	width: 100%
+
+ul 
+	list-style-type: none
+	margin: 0
+	padding: 0
+	overflow: hidden
+	background-color: black
+	font-size: 4vh
+	padding-left: 2vh
+
+li 
+	float: left /*might change this to different solution*/
+
+li a 
+	display: block
+	color: white
+	text-align: center
+	padding: 1vh 1vh
+	text-decoration: none
+
+li a:hover 
+	background-color: grey
+
+.date h2
+	text-align: right
+	padding-top: 1vh
+	padding-right: 1vh
+
+.heading
+	display: flex
+	flex-basis: 90%
+	margin-left: 5%
+	margin-right: 5%
+	margin-top: 1vh
+	margin-bottom: 2vh
+	background-color: #C4C4C4
+
+.heading h2
+	text-align: left
+	font-size: 3vh
+	padding: 1vh 1vh
+
+.News
+	display: flex
+	justify-content: space-between
+	flex-direction: row
+	flex-basis: 90%
+	margin-left: 5%
+	margin-right: 5%
+
+.article
+	flex-basis: 30%
+	background-color: black
+
+.article h3
+	background-color: black
+	color: white
+
+.article a
+	text-decoration: none
+	
+#mobile
+	display: none
+
+.articlePic
+	width: 100%
+	height: 15vh
+
+.developerBanner
+	display: flex
+	flex-basis: 100%
+	justify-content: center
+	margin-top: 2vh
+	margin-bottom: 2vh
+
+.developerBanner a
+	width: 100%
+
+.bannerVer
+	width: 60%
+
+.BottomContent
+	display: flex
+	justify-content: space-between
+	flex-direction: row
+	flex-basis: 90%
+	margin-left: 5%
+	margin-right: 5%
+
+.NewsBottom
+	display: flex
+	flex-basis: 85%
+	justify-content: space-between
+	flex-direction: row
+	align-items: center
+	flex-wrap: wrap
+
+.ArticleBottom
+	flex-basis: 47%
+	background-color: black
+
+.ArticleBottom h3
+	background-color: black
+	color: white
+
+.ArticleBottom a
+	text-decoration: none
+
+.articlePicBot
+	width: 100%
+	height: 25vh
+
+.bannerCF
+	flex-basis: 10%
+
+.banner
+	width: 100%
+
+#navBottom
+	margin-top: 2vh
+
+#navBottom ul
+	font-size: 2.5vh
+
+footer
+	display: flex
+	flex-direction: column
+	background-color: black
+
+.logoBottom
+	display: flex
+	flex-direction: row-reverse
+	padding-right: 4vh
+
+footer h3
+	color: white
+	padding: 3vh
+
+article
+	padding: 5vh
+
+article h2
+	font-size: 5vh
+	text-align: left
+
+article p
+	text-align: justify
+	line-height: 4vh
+
+/*.bannerCF
+	display: flex
+	flex-basis: 20%
+	*/
+
+
+@media only screen and (min-width: 480px)
+
+	.News
+		display: flex
+		justify-content: space-between
+		flex-direction: row
+		flex-basis: 90%
+		margin-left: 5%
+		margin-right: 5%
+
+	.article
+		flex-basis: 30%
+	
+	#mobile
+		display: none
+
+	.articlePic
+		width: 100%
+		object-fit: cover
+
+@media only screen and (max-width: 481px)
+
+	.News
+		display: flex
+		justify-content: space-between
+		flex-direction: row
+		flex-wrap: wrap
+		align-items: center
+		flex-basis: 90%
+		margin-left: 5%
+		margin-right: 5%
+
+	.article
+		flex-basis: 45%
+		margin-bottom: 2vh
+
+	.article h3
+		padding: 1vh
+		font-size: 1.5vh
+	
+	#mobile
+		display: flex
+		flex-basis: 45%
+		height: 21vh
+		padding-bottom: 1vh
+		object-fit: fill
+		margin: 0
+
+	.mobile
+		width: 100%
+
+	.articlePic
+		width: 100%
+		height: 15vh
+		object-fit: cover
+
+	.articlePicBot
+		width: 100%
+		height: 15vh
+		object-fit: cover
+
+	.developerBanner
+		display: none
+
+	.NewsBottom
+		display: flex
+		justify-content: space-between
+		flex-direction: row
+		flex-wrap: wrap
+		align-items: center
+		flex-basis: 100%
+		
+	.ArticleBottom
+		flex-basis: 45%
+		margin-bottom: 2vh
+
+	.ArticleBottom h3
+		height: 5vh
+		padding: 1vh
+		font-size: 1.5vh
+
+	.bannerCF
+		display: none
+
+	.topBanner
+		display: none
+
+	.date
+		display: none
+
+	.CFmob
+		height: 20vh
+		padding-bottom: 1vh
+		width: 100%
+		overflow: hidden
+
+	.FSWDmob
+		width: 100%
+		overflow: hidden
